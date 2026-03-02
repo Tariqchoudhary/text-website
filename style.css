@@ -122,3 +122,75 @@ body {
   width: 300px;
   border-radius: 10px;
 }
+
+/* ---------- Responsive Styles ---------- */
+@media (max-width: 768px) {
+
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 20px;
+  }
+
+  .navbar nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px 20px;
+  }
+
+  .hero-text h1 {
+    font-size: 32px;
+  }
+
+  .hero-text h2 {
+    font-size: 28px;
+  }
+
+  .hero img {
+    width: 220px;
+    margin-top: 20px;
+  }
+
+  .products {
+    padding: 20px;
+  }
+
+  .product img {
+    height: 150px;
+  }
+
+  .cart-box {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .logo {
+    font-size: 18px;
+  }
+
+  .hero-text h1 {
+    font-size: 26px;
+  }
+
+  .hero-text h2 {
+    font-size: 22px;
+  }
+
+  .shop-btn {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+}
